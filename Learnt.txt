@@ -1,0 +1,9 @@
+figure
+shape-outside : circle(50% at 50% 50%) but works for float
+use transform to move for floated element
+//two transform will not work in different different declaration -> write in one line
+//select class > * [all direct child selector]
+//figcaption 
+//filter : blur , brightness()
+//object-fit : cover;
+//font-family check all weight

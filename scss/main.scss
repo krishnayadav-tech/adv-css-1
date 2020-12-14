@@ -10,11 +10,15 @@
 @import 'component/composition';
 @import 'component/feature-box';
 @import 'component/card';
+@import 'component/story';
+@import 'component/bg-video';
+@import 'component/form';
+@import 'layout/footer';
   
   .header {
     background-image: linear-gradient(to bottom right, rgba($color-primary,0.8), rgba($color-primary-dark,0.8)), url("./../img/hero.jpg");
     height: 95vh;
-    width: 100%;
+    width: 100%; 
     background-size: cover;
     background-position: top;
     position: relative;
@@ -42,9 +46,8 @@
     text-align: center;
   }
   
-  
   .text-box-head,.text-box-para{
-    display: block;
+    display: block ;
   }
   .text-box-head{
     font-size: 5rem;
