@@ -1,0 +1,34 @@
+.heading-secondary{
+    font-size : 3.5rem;
+    text-transform:  uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .2s;
+    letter-spacing: .2rem;
+    &:hover{
+        transform: skewY(2deg) skewX(15deg);
+        text-shadow: .5rem 1rem 2rem rgba($color-black,0.2);
+    }
+} 
+
+
+.heading-tertiary{
+    color : #777;
+    font-size : 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-size : 1.6rem;
+    line-height: 1.75rem;;
+    color : #777;
+    &:not(:last-child){
+
+        margin-bottom: 3rem;
+    }
+}

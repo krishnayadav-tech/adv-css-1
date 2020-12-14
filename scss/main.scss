@@ -1,0 +1,79 @@
+@import 'base/base';
+@import 'base/utilities';
+@import 'abstract/variables';
+@import 'base/animation';
+@import 'abstract/mixins';
+@import 'layout/grid';
+@import 'pages/home';
+@import 'base/typography';
+@import 'component/button'; 
+@import 'component/composition';
+@import 'component/feature-box';
+@import 'component/card';
+  
+  .header {
+    background-image: linear-gradient(to bottom right, rgba($color-primary,0.8), rgba($color-primary-dark,0.8)), url("./../img/hero.jpg");
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 75vh ,0 100%);
+  }
+  
+  .logo-min{
+    top : 2.0rem;
+    left : 2.0rem;
+    position: absolute;
+  }
+  
+  .logo-min-img{
+    width: 5.0rem;
+  }
+  
+  .text-box{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%,-50%);
+    color : white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  
+  .text-box-head,.text-box-para{
+    display: block;
+  }
+  .text-box-head{
+    font-size: 5rem;
+    letter-spacing: 3.0rem;;
+    animation : moveleft 0.9s;
+  }
+  .text-box-para{
+    letter-spacing: .5rem;
+    font-weight: 300;
+    animation : moveright 0.9s;
+  }
+  
+  
+  .btn-header, .btn-header:link{
+      margin-top: 3rem;
+      padding: 2rem;
+      display: inline-block;
+      margin-top: 2rem;;
+      width: 25rem;
+      color : black;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 300;   
+      background-color: $color-white;
+      border-radius : 10rem;
+      font-size: 1.8rem;
+      transition: all 0.5s;
+  }
+
+.btn-header:hover{
+    transform: translateY(-3px);
+}
