@@ -15,6 +15,7 @@
 @import 'component/form';
 @import 'layout/footer';
 @import 'layout/navigation';
+@import 'pages/popup';
   
   .header {
     background-image: linear-gradient(to bottom right, rgba($color-primary,0.8), rgba($color-primary-dark,0.8)), url("./../img/hero.jpg");

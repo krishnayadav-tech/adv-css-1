@@ -8,4 +8,4 @@ use transform to move for floated element
 //object-fit : cover;
 //font-family check all weight
 //background-size ,  radial-radient , linear-gradient with degree and % at diff position
-//
+//column count column-gap column-rule
