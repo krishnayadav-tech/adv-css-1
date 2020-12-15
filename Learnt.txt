@@ -7,3 +7,5 @@ use transform to move for floated element
 //filter : blur , brightness()
 //object-fit : cover;
 //font-family check all weight
+//background-size ,  radial-radient , linear-gradient with degree and % at diff position
+//
