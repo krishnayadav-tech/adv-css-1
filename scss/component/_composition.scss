@@ -1,5 +1,9 @@
 .composition{
     position : relative;
+
+    @include respond(tab-port){
+        height: 40rem;
+    }
     &__photo{
         width: 55%;
         border-radius: 2px;

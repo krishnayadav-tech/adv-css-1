@@ -17,7 +17,6 @@ $color-grey-dark : #333;
     &__navigation{
         padding-top: 2rem;
         display: inline-block;
-        border-top: 1px solid $color-white;
     }
 
     &__list{
@@ -47,11 +46,21 @@ $color-grey-dark : #333;
     }
 
     &__copyright{
-        float: right;
         display: inline-block;
-        border-top: 1px solid $color-white;
-        padding-top: 20px;
         color: $color-white;
-        text-align: right;
+    }
+    .second-footer-2{
+        padding-left: 2rem;
+        border-top: 1px solid $color-white;
+    }
+    .second-footer-1{
+        border-top: 1px solid white;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        @include respond(tab-port){
+            text-align: center;
+            border-top: 1px solid white;
+            padding-top: 2rem;
+        }
     }
 }

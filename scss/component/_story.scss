@@ -20,16 +20,29 @@
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         transform : translateX(-3rem)  skewX(12deg);;
+
+        @include respond(tab-port){
+            float: none;
+            margin : 0 auto;
+            transform: skewX(0);
+        }
     }
 
     &__image{
         height: 100%;
         transform: translateX(-4rem) scale(1.5);
         transition: all 0.5s;
+
+
     }
 
     &__text{
         transform : skewX(12deg);
+
+        @include respond(tab-port){
+            transform : skewX(0);
+            margin-top: 2rem;
+        }
     }
 
     &__caption{
@@ -54,6 +67,11 @@
         backface-visibility: hidden;
         transform: translateX(-4rem) scale(1);
         filter: blur(3px) brightness(80%);
+    }
+
+    @include respond(tab-port){
+        width: 100%;
+        transform: skewX(0);
     }
 }
 

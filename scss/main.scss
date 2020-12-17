@@ -1,8 +1,8 @@
+@import 'abstract/mixins';
 @import 'base/base';
 @import 'base/utilities';
 @import 'abstract/variables';
 @import 'base/animation';
-@import 'abstract/mixins';
 @import 'layout/grid';
 @import 'pages/home';
 @import 'base/typography';
@@ -25,6 +25,14 @@
     background-position: top;
     position: relative;
     clip-path: polygon(0 0,100% 0,100% 75vh ,0 100%);
+
+    @include respond(phone){
+      clip-path: polygon(0 0,100% 0,95vh 85vh ,0 100%);
+    }
+
+    @include respond(tab-land){
+      clip-path: polygon(0 0,100% 0,95vh 85vh ,0 100%);
+    }
   }
   
   .logo-min{
@@ -46,6 +54,10 @@
     color : white;
     text-transform: uppercase;
     text-align: center;
+    @include respond(phone){
+      letter-spacing: 1rem;
+    }
+
   }
   
   .text-box-head,.text-box-para{
@@ -61,7 +73,7 @@
     font-weight: 300;
     animation : moveright 0.9s;
   }
-  
+   
   
   .btn-header, .btn-header:link{
       margin-top: 3rem;
@@ -77,6 +89,9 @@
       border-radius : 10rem;
       font-size: 1.8rem;
       transition: all 0.5s;
+      @include respond(phone){
+        letter-spacing: 0.1rem;
+      }
   }
 
 .btn-header:hover{
